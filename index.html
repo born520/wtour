@@ -1,1 +1,290 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>특가 모음</title><style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+    .container {
+      width: 100%;
+      max-width: 1800px;
+      margin: 0 auto;
+      padding: 10px;
+      column-count: 6;
+      column-gap: 10px;
+    }
+    .card {
+      position: relative;
+      break-inside: avoid;
+      background-color: white;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+      width: 100%;
+      border: 2px solid transparent;
+    }
+    .card.expanded {
+      border: 2px solid red;
+      transform: scale(1.05);
+      animation: blink-border 1s infinite;
+      z-index: 10;
+    }
+    @keyframes blink-border {
+      0% { border-color: red; }
+      50% { border-color: transparent; }
+      100% { border-color: red; }
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card p {
+      padding: 15px;
+      margin: 0;
+      line-height: 1.5;
+    }
+    .card p.excerpt {
+      font-size: 14px;
+      color: #333;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+    .card-content {
+      display: none;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+    .card-content img {
+      margin-top: 10px;
+    }
+    .card.expanded .excerpt {
+      display: none;
+    }
+    .card.expanded .card-content {
+      display: block;
+    }
+    @media (max-width: 1800px) { .container { column-count: 5; } }
+    @media (max-width: 1500px) { .container { column-count: 4; } }
+    @media (max-width: 1200px) { .container { column-count: 3; } }
+    @media (max-width: 900px) { .container { column-count: 2; } }
+    @media (max-width: 600px) {
+      .container { column-count: 1; }
+      body { font-size: 12px; }
+      .card p.excerpt { font-size: 12px; }
+    }
+  </style></head><body><div class="container">
+      <div id="card-0" class="card" onclick="toggleCard(0)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ajhf/c_34fUd018svc1i9yi8axm04ds_qgwf7l.png" alt="Post image">
+        <p class="excerpt">[7C] 11월 - 12월 스.팟.특.가~!!!<br>11월 8,17,18,19,26,23,24,27,29,30<br>12월 2,3,7,8,13,14,16,17 <br>날짜만 맞으...</p>
+        <div class="card-content">
+          <p>[7C] 11월 - 12월 스.팟.특.가~!!!<br>11월 8,17,18,19,26,23,24,27,29,30<br>12월 2,3,7,8,13,14,16,17 <br>날짜만 맞으면, 너무나 착한 특가로 ~!!!<br>동남아 최고의 관광&amp;휴양지로 떠날 수 있어요~<br>🧿 11/8까지 선발조건~!!!<br>✈7C 부산→방콕 19:30-23:40<br>✈7C 방콕→부산 01:10-08:35+1<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>✅ 실속팩 499,000원~<br>✅ 노노팩 729,000원~<br>✅ 로얄클립 휴양팩 949,000원~<br>✅ 두짓타니 니모팩 1,049,000원~<br>✴ 실속팩 / 노노팩<br>📌방콕 파타야의 대표적인 관광지 즐기기~!!<br>푸카오텅(짠내투어 방영-황금산사원),<br>돌핀아리움~돌고래&amp;물개쇼,<br>화려한 야시장, 에메랄드 빛 바다 산호섬 또는 초호화 요트 탑승,<br>수상시장인 플로팅마켓, 산 전체에 새겨진 황금 불상이 있는 황금절벽사원,<br>태국하면 떠오르는 대표적인 동물, 코끼리트래킹,<br>차오프라야강의 야경을 보며 즐기는 욧시암크루즈 등<br>✴ 로얄클립(휴양) / 두짓타니(니모호핑투어)<br>📌 5성급호텔에서 즐기는 힐링타임~!!!<br>📌아시아 최대 정원 농눅빌리지, 황금와불상이 잇는 왓포사원,<br>방콕의 신개념 야시장 아시아티크, 차오프라야강 야경을 즐기는 욧시암크루즈<br>📌노팁노옵션노쇼핑 - 니모투어<br>(니모섬 호핑투어/농눅빌리지/황금절별사원/진리의성전)<br>👉 특전 및 포함사항<br>해당 일정표 참고 부탁드립니다.<br>----------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>----------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 담당직통 : 051) 919-3302<br>* O P : 임효정 차장 wtourbusan3@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37aj86/c_64fUd018svc12dqnuh28rwkp_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj3h/c_54fUd018svc13gg2o8nz23el_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajce/c_74fUd018svc103q4o93tdfa7_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajgd/c_84fUd018svc9n1ox5n6fqqb_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj1e/c_a4fUd018svc1rz5qytwdlidf_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj36/c_b4fUd018svc8b0cxdrx51xz_qgwf7l.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-1" class="card" onclick="toggleCard(1)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ajce/f_i4eUd018svc13xzsjnyavkb4_f3lf1a.png" alt="Post image">
+        <p class="excerpt">🌴✨ 에어부산 X 발리 신규 취항 ✨🌴<br>🔔띵동! 발리 앵콜 특가 도착입니다~!<br>많은 분들의 성원에 힘입어 한번 더! <br>특가 상품 게시합니다!<br>선착순 10...</p>
+        <div class="card-content">
+          <p>🌴✨ 에어부산 X 발리 신규 취항 ✨🌴<br>🔔띵동! 발리 앵콜 특가 도착입니다~!<br>많은 분들의 성원에 힘입어 한번 더! <br>특가 상품 게시합니다!<br>선착순 10명!!🗝<br>🍀지금 바로 행운의 주인공이 되어보세요!<br>📅11월 12월 단 6날짜!<br>✔ 3박 5일[일] 11/3, 10, 17 // 12월 1, 8, 15<br>479,000~<br>🌟발리 초!!특가🌟<br>어디서도 찾아볼 수 없는 가격과 퀄리티<br>가격 부담을 확실하게 낮춘 발리!<br>지금 바로 예약하세요!<br>😘발리 명소 투어 포함!<br>😜우붓 관광 포함!<br>🤩짐바란 씨푸드 포함!<br>아름다운 해안 절경과 함께 발리의 <br>독특한 문화를 한눈에 경험해 보세요! 자연과 전통이 <br>어우러진 이곳에서 색다른 매력을 느낄 수 있어요~!<br>⏰ 서두르세요! 다시 없을 기회입니다!<br>📌 포함 사항<br>* 발리명소투어[가루다공원, 울루와뚜사원, 싱글 핀발리]<br>* 우붓관광<br>[우붓왕궁, 전통시장, 사라스와띠사원, 몽키포레스트]<br>* 발리 전통마사지 1시간[팁별도]<br>* 특식 : 짐바란 씨푸드<br>📌 아융강 래프팅&amp;중식+너티누리스 폭립+마사지 2시간<br>한국에서 포함시 성인 17만원 / 아동 13만원<br>- 출발 7일전 사전신청자에 한함.<br>📌 준비사항<br>* 입 국<br>-발리 도착비자[사전 온라인 지불/현지 납부가능] :<br>https://evisa.imigrasi.go.id/<br>- 발리 관광세[현지납부불가]<br>https://lovebali.baliprov.go.id/<br>- 세관 신고서 작성 (입국 3일전부터 작성)<br>https://ecd.beacukai.go.id/<br>-------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070)7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37ajhg/f_j4eUd018svc1gs5nnoy78sn1_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj8d/1_54fUd018svc1qyvvxsfbfp66_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37879c/2_ceiUd018svc15qihciml8vqr_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/373c86/e_h3jUd018svc1q162yzmhdqu2_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-2" class="card" onclick="toggleCard(2)">
+        <img src="https://coresos-phinf.pstatic.net/a/37aj4i/j_c31Ud018svc1freqhynj9di9_emfpq1.png" alt="Post image">
+        <p class="excerpt">화이트비치, 에메랄드 빛 투명한 바다가 기다리는 곳💙<br>다양한 액티비티까지 즐길 수 있는 열대 파라다이스🌴<br>야자수가 늘어선 해변에 새하얀 모래, 에메랄드빛 투명한 <b...</p>
+        <div class="card-content">
+          <p>화이트비치, 에메랄드 빛 투명한 바다가 기다리는 곳💙<br>다양한 액티비티까지 즐길 수 있는 열대 파라다이스🌴<br>야자수가 늘어선 해변에 새하얀 모래, 에메랄드빛 투명한 <br>바다로 유명한 휴양지 🛴<br>✨보라카이✨로 떠나 보시는 건 어떤가요?<br>에어부산이 보라카이로 모셔다 드립니다!<br>매일 있는 보라카이 직항이 아니에요<br>단, 19항차만 뜬다구욧😎!<br>&#39;보라카이&#39;에서 잊지 못할 추억을 만들어보세요💕<br>📆 24/12/25 ~ 25/2/26 - 19항차<br>- 수요일 3박 5일<br>- 토요일 4박 6일<br>📍편안한 왕복 픽업 OK<br>📍NO 옵션, NO 쇼핑으로 여유로운 일정<br>📍보라카이에서 즐기는 액티비티 <br>📍전 일정 자유일정으로 완벽한 힐링타임 OK<br>📌준비사항<br>* 입 국 : E-트래블 등록 후 QR코드 지참[72시간 내 등록]<br>* 15세미만 아동 : 부모 동행 – 영문 가족관계증명서<br>                    부모 미동행 – 필리핀 대사관 공증<br>--------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200<br>* O P : 박선아 wtourbusan10@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37ajf1/3_c32Ud018svcxtjs0btgtexr_emfpq1.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj80/3_g35Ud018svcvlu26qdhzy2z_emfpq1.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj2c/8_433Ud018svc1gg826j9ha13t_emfpq1.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajci/f_432Ud018svcjsjne73x0xv1_emfpq1.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj4a/f_532Ud018svc1qqt7v2wsk2mh_emfpq1.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ai31/j_bhgUd018svcp6sdbn7oiyph_emfpq1.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aid3/1_5hhUd018svcysh9szf62g3i_emfpq1.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ai7e/2_2hhUd018svcjy27d7je3o8h_emfpq1.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-3" class="card" onclick="toggleCard(3)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ajba/d_i0iUd018svc14yc7zr0xe5sx_3m6c9o.png" alt="Post image">
+        <p class="excerpt">📢 푸꾸옥 에어텔!!<br>👌&#39;유명해지기 전에 꼭 가봐야 할 여행지’로 선정한 베트남의 몰디브 ~~<br>👌아름다운 해변과 연중 물놀이가 가능한 유일한 지역!!<br>...</p>
+        <div class="card-content">
+          <p>📢 푸꾸옥 에어텔!!<br>👌&#39;유명해지기 전에 꼭 가봐야 할 여행지’로 선정한 베트남의 몰디브 ~~<br>👌아름다운 해변과 연중 물놀이가 가능한 유일한 지역!!<br>👌남녀노소 모든연령층을 만족시키는 다양한 액티비티!!<br>✔24년 10월 ~ 25년 3월 31일 [3박5일 데일리]<br>✔비엣젯항공 (수화물 20KG)<br>✔2베드풀빌라/3베드풀빌라 1인 639,000원 부터~<br>💎 멜리아 빈펄 리조트 <br>✅ 빈사파리,빈원더스 무료 셔틀 운영<br>✅ 그랜드월드 근접!<br>✅ 공항&lt;-&gt;호텔 무료 리조트셔틀 차량 제공<br>✈ 부산 푸꾸옥 VJ969 07:35 - 11:05<br>✈ 푸꾸옥 부산 VJ968 23:40 - 06:30<br>❤여권유효기간 6개월 이상 확인해주세요.<br>❤부모동반 14세미만 아동 동반시 영문 가족관계증명서 꼭 지참!!<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 070-7575-0482<br>* O P : 구혜옥 wtourbusan7@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37aj7i/f_d0iUd018svc1qw4kcyaead0k_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj56/f_e0iUd018svcw3qgp0r92vuw_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajef/i_50iUd018svcagqe16k555i0_3m6c9o.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-4" class="card" onclick="toggleCard(4)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ajg0/5_a02Ud018svcodc52shxi0zu_qgwf7l.png" alt="Post image">
+        <p class="excerpt">[VJ]부산-하노이 직항 - 증편운항!!<br>베트남의 수도, 정치, 경제, 문화의 중심지, 하노이<br>13C에 건립된 베트남의 가장 중요한 사찰 , 베트남 불교의 중심지, 옌뜨...</p>
+        <div class="card-content">
+          <p>[VJ]부산-하노이 직항 - 증편운항!!<br>베트남의 수도, 정치, 경제, 문화의 중심지, 하노이<br>13C에 건립된 베트남의 가장 중요한 사찰 , 베트남 불교의 중심지, 옌뜨국립공원<br>UNESCO 세계 자연 유산, 하롱베이<br>💖아름다운 자연 경관과 풍부한 문화적 경험을 할 수 있는 인기 여행지~!!<br>[VJ ] 하노이/하롱베이/옌뜨<br>✅ 24년 10월 ~ 25년 3월 [매일운항]<br>✅ 비엣젯항공<br>✅ 패턴 3박5일 // 12/20부터 증편 1일 2회 운항😀<br>✅ 스케쥴<br>부산/하노이 VJ981 08:00-10:50 / VJ957 08:30-11:35<br>하노이/부산 VJ982 01:00-07:00 / VJ 956 00:45-06:55<br>🔵 실속팩 :369,000원~<br>🔴 노팁노옵션 : 729,000원~<br>⭕ 포함사항 ⭕<br>✔ 항공 및 텍스, 유류할증료, 여행자보험<br>✔ 숙박, 전일정식사, 차량, 관광지입장료<br>✔ 호암끼엔호수(스트릿카), 옌뜨국립공원(케이블카)<br>✔ 하롱베이 수상인형극, 하롱베이 유람<br>✔ 전신맛사지1시간, 하노이 시내관광<br>✔ 노팁노옵션시 - 기사&amp;가이드팁, 하롱베이 비경투어(스피드보트)<br>     전신맛사지 2시간 추가, 하롱테마파크<br>     베트남 전통모자 농, 노니비누, G7커피(룸당1개)<br>❌ 불포함사항 ❌<br>: 기사가이드팁($50 / 노노팩 포함)<br>: 개인경비, 매너팁, 선택관광(실속팩)<br>-----------------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>-----------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 담당직통 : 051) 919-3302<br>* O P : 임효정 차장 wtourbusan3@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37aj2i/5_c02Ud018svc1ae9flzc03m7j_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj9h/5_d02Ud018svc4uen04n0ypbs_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajhb/5_e02Ud018svc1ad32zl7hwc8w_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj8b/2_g0cUd018svcl95w0717m64h_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj8g/8_705Ud018svcm59thghjostz_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajdb/5_705Ud018svct9bidofetmlo_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj31/3_i03Ud018svc15vy7sevk684r_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aj0i/d_i05Ud018svcjrnva7knhjwk_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ajg8/2_i0cUd018svc16u38urszqx2n_qgwf7l.jpg" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-5" class="card" onclick="toggleCard(5)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ag38/g_859Ud018svc12hrw0e9gj31b_f3lf1a.png" alt="Post image">
+        <p class="excerpt">🔊 당신의 다음 여행지, 싱가포르는 어떠신가요?<br>✨ 글로벌 매력을 지닌 도시<br>✨ 미식의 천국<br>✨ 깨끗하고 안전한 여행지<br>싱가포르에서 잊지 못할 멋진 경험을 ...</p>
+        <div class="card-content">
+          <p>🔊 당신의 다음 여행지, 싱가포르는 어떠신가요?<br>✨ 글로벌 매력을 지닌 도시<br>✨ 미식의 천국<br>✨ 깨끗하고 안전한 여행지<br>싱가포르에서 잊지 못할 멋진 경험을 만들어보세요!<br>1. 가든스 바이 더 베이<br>자연과 미래가 공존하는 특별한 공간, <br>가든스 바이 더 베이! 눈부신 슈퍼트리 쇼를 즐겨보세요.<br>*12월에는 ‘원더랜드’ 특별 전시로 인해 추가 요금이 부과됩니다.<br>2. 센토사 섬<br>액티비티와 해변이 어우러진 센토사 섬에서 <br>다양한 즐거움을 만끽하세요!<br>3. 마리나 베이 샌즈<br>호화로운 휴식과 환상적인 뷰가 함께하는<br>싱가포르의 랜드마크, 마리나 베이 샌즈!<br>4. 마담 투소<br>세계적인 인물들과의 특별한 만남!<br>생동감 넘치는 체험을 마담 투소에서 경험해보세요!<br>🌟 싱가포르 필수 코스, 가든스 바이 더 베이! 🌟<br>모네의 정원을 닮은 아름다운 풍경 속에서 특별한 시간을 보내세요!<br>‘모네의 정원’ 대신 클라우드돔과 전망대 선택 시,<br>18,000원 할인 혜택이 적용됩니다.<br>✈ 부산-싱가포르 - 제주항공 <br>10/27~ 매 일 3박 5일<br>📌 1일자유&amp;패키지 : 1일자유  <br>                 MBS 1일자유 <br>📌 전일정 가이드동행 : 전일관광(풀팩) <br>노쇼핑 조건 입니다<br>팁, 옵션 선포함으로 노노노 출발도 가능합니다~!!<br>📌 제주항공 GV4 요금으로 2인 발권시 2만원 추가됩니다.<br>📌 72시간전 싱가포르 입국카드(SG카드) 작성<br>--------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>-------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* O P : 이원경 대리 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37agb3/g_659Ud018svc12itg3szs9iou_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af6c/4_152Ud018svc53gxtou0lgyr_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37afi9/3_j52Ud018svc136uqhbrnnx1y_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af9d/4_252Ud018svc8z1h55mufjo_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/36jc74/5_735Ud018svcw1shizjzcehi_f3lf1a.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/36jce2/5_a35Ud018svcsk3aypl29shh_f3lf1a.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/36jci9/4_e35Ud018svchxos44kxyciv_f3lf1a.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/36144c/3_20eUd018svck6oomtfszcmk_uaklml.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/3614g9/3_30eUd018svcuenc45hpk5ow_uaklml.jpg" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-6" class="card" onclick="toggleCard(6)">
+        <img src="https://coresos-phinf.pstatic.net/a/37af7d/d_62bUd018svcinna545fdfwc_3m6c9o.png" alt="Post image">
+        <p class="excerpt">낭만적인 동양의 나폴리 나트랑!<br>청정자원이 숨쉬는 고원 도시 달랏!<br>🌈여유로운 오전출발~  달랏 스페셜 특가!!<br>✅ (실속팩) 309,000원 ~<br>✅ (노노...</p>
+        <div class="card-content">
+          <p>낭만적인 동양의 나폴리 나트랑!<br>청정자원이 숨쉬는 고원 도시 달랏!<br>🌈여유로운 오전출발~  달랏 스페셜 특가!!<br>✅ (실속팩) 309,000원 ~<br>✅ (노노팩) 529,000원 ~<br>✨ 스페셜 혜택 (노팁노옵션) ✨<br>📌 품격 5성특급 (투이블루/리갈리아,스위스벨 동급)<br>📌 머드온천, 마차투어, 죽림사 케이블카<br>📌 다딴란 폭포 레일바이크<br>📌 나트랑&amp;달랏 야시장(씨클로, 맥주, 피자, 음료)<br>📌 베트남 전신마사지 2시간<br>✈ 부산 나트랑 VJ 991 07:35-10:35<br>✈ 나트랑 부산 VJ 990 00:05-06:30<br>❤여권유효기간 6개월 이상 확인해주세요.<br>❤부모동반 만14세미만 아동 영문 가족관계증명서 필수!!<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 070-7575-0482<br>* O P : 구혜옥 wtourbusan7@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37af23/f_52bUd018svcmwtzxv7t86sn_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37afd1/g_b2bUd018svcqgjb0rw57l6o_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af3c/b_i2dUd018svct34c18kjpj7k_3m6c9o.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-7" class="card" onclick="toggleCard(7)">
+        <img src="https://coresos-phinf.pstatic.net/a/37af6e/7_125Ud018svca29cfidx8vyg_qgwf7l.png" alt="Post image">
+        <p class="excerpt">🎈 파타야의 매력 분석~!!<br>1. **아름다운 해변**<br>: 맑고 푸른 바다, 아름다운 해변에서 수영, 일광욕, 다양한 수상스포츠를 즐길 수 있어요.<br>2. **다양...</p>
+        <div class="card-content">
+          <p>🎈 파타야의 매력 분석~!!<br>1. **아름다운 해변**<br>: 맑고 푸른 바다, 아름다운 해변에서 수영, 일광욕, 다양한 수상스포츠를 즐길 수 있어요.<br>2. **다양한 액티비티**<br>: 스노클링, 다이빙, 골프, ATV 라이딩 등 다양한 레저 활동이 가능합니다.<br>3. **풍부한 야경**<br>: 파타야의 야경은 아주 화려하며, 바다를 배경으로 한 나이트라이프가 매력적이예요.<br>4. **문화 체험**<br>: 황금절벽사원 등 화려한 불교사원을 통해 태국의 전통 문화를 체험할 수 있습니다.<br>5. **맛있는 음식**<br>: 다양한 태국 요리와 해산물을 즐길 수 있는 식당이 많습니다.<br>6. **접근성**<br>: 방콕에서 1시간20분의 가까운 거리로 교통이 아주 편리합니다.<br>이러한 요소들이 파타야를 더욱 매력적인 여행지로 만들어 줍니다.<br>[7C] 24년 11월 ~ 25년 3월  출발~!!!<br>🧿 10/30까지 선발조건~!!!<br>✈ 부산→방콕 7C2251 19:30 - 23:40<br>✈ 방콕→부산 7C2252 01:10-06:10+1<br>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓<br>✅ 실속팩 539,000원~<br>✅ 노노팩 779,000원~<br>✅ 로얄클립 휴양팩 999,000원~<br>✅ 두짓타니 니모팩 1,099,000원~<br>✴ 실속팩 / 노노팩<br>📌방콕 파타야의 대표적인 관광지 즐기기~!!<br>푸카오텅(짠내투어 방영-황금산사원),알카쟈쇼,<br>에메랄드 빛 바다 산호섬 또는 초호화 요트 탑승,<br>수상시장인 플로팅마켓, 산 전체에 새겨진 황금 불상이 있는 황금절벽사원,<br>태국하면 떠오르는 대표적인 동물, 코끼리트래킹,<br>차오프라야강의 야경을 보며 즐기는 욧시암크루즈 등<br>✴ 로얄클립(요트) / 두짓타니(니모호핑투어)<br>📌 5성급호텔에서 즐기는 힐링타임~!!!<br>📌아시아 최대 정원 농눅빌리지, 황금와불상이 잇는 왓포사원,<br>방콕의 신개념 야시장 아시아티크, 차오프라야강 야경을 즐기는 욧시암크루즈<br>📌노팁노옵션노쇼핑 - 니모투어<br>(니모섬 호핑투어/농눅빌리지/황금절별사원/진리의성전)<br>----------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>----------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 담당직통 : 051) 919-3302<br>* O P : 임효정 차장 wtourbusan3@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37afif/7_225Ud018svc1bdr2t2sjratf_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af2j/7_425Ud018svc1asbsfkef0hbt_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af68/7_525Ud018svcw53gwqmu2zj1_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37afc4/7_625Ud018svc1s7qc8ryeycp9_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af0h/7_925Ud018svcmjgxlufp9jtz_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af3e/7_a25Ud018svc1dxhf265b0dbo_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37afea/c_b25Ud018svc5qd6fimutbnb_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af89/c_a25Ud018svc11jf6f0mqhmje_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af23/c_925Ud018svc1pdatztd2g9il_qgwf7l.jpg" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-8" class="card" onclick="toggleCard(8)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ae53/c_a00Ud018svcb43gs8saqn2s_qgwf7l.png" alt="Post image">
+        <p class="excerpt">🎁 [ZE] 치앙마이 직항 🎁<br>🔹북방의 장미라 불리는 치앙마이~!!!!<br>🔹치앙마이,치앙라이, 골든트라이앵글 ~!!<br>🔹화려한 사원과 예술가들의 숨결이 느껴지...</p>
+        <div class="card-content">
+          <p>🎁 [ZE] 치앙마이 직항 🎁<br>🔹북방의 장미라 불리는 치앙마이~!!!!<br>🔹치앙마이,치앙라이, 골든트라이앵글 ~!!<br>🔹화려한 사원과 예술가들의 숨결이 느껴지는 볼거리 천국 !!<br>치앙마이는 아름다운 자연경관과 풍부한 문화유산으로 유명합니다.<br>이곳은 고대 사원, 전통 시장, 그리고 다양한 축제가 열립니다. 도이수텝 사원은 치앙마이의 상징적인 장소로, 도시를 내려다보는 멋진 전망을 제공합니다. 또한, 치앙마이는 태국의 전통 요리와 다양한 수공예품으로도 유명하여, 방문객들은 현지 음식을 맛보고 기념품을 구매하는 즐거움을 누릴 수 있습니다. 자연을 사랑하는 이들에게는 트레킹, 자전거 타기, 코끼리 보호소 방문 등 다양한 액티비티도 제공됩니다.<br>✈ [ZE] 부산-치앙마이 직항 ✈<br>✴ 기간 : 24년 12/19~ 25년 3/29<br>✴ 패턴 : 3박5일<br>부산/치앙마이 ZE947 18:00-21:20<br>치앙마이/부산 ZE948 22:20 - 06:05+1<br>📢 직항으로 편리하게 치앙마이로 떠나요^^<br>✔사원의 나라 [백색사원, 블루사원, 왓체디루엉]<br>✔골든트라이앵글, 씽하파크, 싼캄펭마을<br>✔코끼리 농장, 매카찬 족욕 온천, 도이수텝 등<br>✅ 실속팩 649,000원~<br>✅ 품격팩 789,000원~<br>✅ 고품격(노노팩) 979,000원~<br>------------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>------------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200<br>* 직통 : 051) 919-3302<br>* O P : 임효정 wtourbusan3@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37aei7/c_b00Ud018svcu36464e3osq5_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ae06/c_d00Ud018svc1n5tqd6stqlih_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ae3g/c_e00Ud018svc11fhahduhkoyv_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aeb5/c_f00Ud018svcyfh4a5ghkfq0_qgwf7l.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aeib/7_j01Ud018svc4cpi1xiiqtth_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aed3/2_c04Ud018svc1x5n4xvgqntc3_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aedj/8_201Ud018svclay64fybvth6_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37aee1/8_301Ud018svc1wv9t78plozd6_qgwf7l.jpg" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ae62/8_401Ud018svcxfwy2dfiqs7g_qgwf7l.jpg" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-9" class="card" onclick="toggleCard(9)">
+        <img src="https://coresos-phinf.pstatic.net/a/37ad80/0_fghUd018svcqru38w3f9rkv_3m6c9o.png" alt="Post image">
+        <p class="excerpt">(ALL-INCLUSIVE)         <br>📢 나트랑 5성 특급 리조트<br> 셀렉텀 노아 캄란 - 올인클루시브 에어텔!!<br>여유로운 나만의 휴식을 원하는 호캉스족에 ...</p>
+        <div class="card-content">
+          <p>(ALL-INCLUSIVE)         <br>📢 나트랑 5성 특급 리조트<br> 셀렉텀 노아 캄란 - 올인클루시브 에어텔!!<br>여유로운 나만의 휴식을 원하는 호캉스족에 강력 추천 👍👍<br>✅ 24년 10월 ~ 25년 3월 31일<br>✅ VJ항공 3박5일패턴<br>✅ 프리미어디럭스룸 1인 749,000원 부터~<br>❤❤ 셀렉텀 노아 만이 드리는 특별혜택 ❤❤<br>📍 리조트&lt;-&gt;공항 왕복 차량 운영<br>📍 시내 왕복 셔틀버스 운영<br>📍 조식 / 중식 / 석식 전식 제공<br>📍23시까지 스낵, 로컬 맥주, 와인 &amp; 드링크 무제한 제공<br>📍데일리 객실 미니바 리필 서비스 (맥주 2병, 탄산음료 2명, 물 2병, 스낵 1)<br>📍아쿠아 파크 (워터파크) - 총 6개의 워터슬라이드 무제한 이용<br>📍키즈클럽, 리조트 프로그램, 테니스코트, 탁구장까지 무제한 이용<br>📍18시 레이트 체크아웃 무료 제공!! (단,12/24~ 불가함!!)<br>✈ 부산 나트랑 VJ991 07:35 - 10:35<br>✈ 나트랑 부산 VJ990 00:05 - 06:30<br>❤여권유효기간 6개월 이상 확인해주세요.<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 070-7575-0482<br>* O P : 구혜옥 wtourbusan7@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37ad4b/g_5h1Ud018svcgm0rbj6m5sgh_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37ad79/h_1h1Ud018svcjduij3wwjugh_3m6c9o.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-10" class="card" onclick="toggleCard(10)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a49e/3_ba2Ud018svc2gb4dsuw7k3k_shneee.png" alt="Post image">
+        <p class="excerpt">⭐⭐베트남의 스테디셀러⭐⭐<br>&lt;다낭/호이안&gt; 3박4일 패키지<br>📍알뜰 실속 479,000~<br>📍노팁노옵션 719,000~<br>✔10/16 ~ 25/3/2...</p>
+        <div class="card-content">
+          <p>⭐⭐베트남의 스테디셀러⭐⭐<br>&lt;다낭/호이안&gt; 3박4일 패키지<br>📍알뜰 실속 479,000~<br>📍노팁노옵션 719,000~<br>✔10/16 ~ 25/3/26 출발 요금 [10/28 선발권 조건]<br>🎀더욱더 풍성해진 혜택 (품격)🎀<br>1️⃣전 객실 과일바구니 제공 (2인1실)<br>2️⃣베트남 전통마사지 120분 + 풋테라피 60분 추가 제공<br>&lt;특별한 혜택 - 품격&gt;<br>💡5성급 호텔 - 멜리아 빈펄 리버 프론트, 셀 드 메르<br>💡바나산 국립공원 관광<br>💡대리석으로 이루어진 마블마운틴(오행산)<br>💡유네스코 세계문화유산인 호이안 시내관광<br>💡베트남 전통마사지 120분<br>💡호이안 바구니배<br>💡한강크루즈<br>💡전통의상 아오자이 체험관 (기념사진+음료제공)<br>💡미케비치해변 (열대과일 및 음료제공)<br>🛫부산 다낭 7C 2955 09:35 - 12:30<br>🛬다낭 부산 7C 2956 13:40 - 19:55<br>❤여권유효기간 6개월 이상 확인해주세요.<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 051) 468-0406<br>* O P : 박소연 wtourbusan6@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a4cb/3_ca2Ud018svc1hq1ckuwk4my3_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a4ie/3_ea2Ud018svc1hgcr08nayrar_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a4i6/3_da2Ud018svcsalgb0sjj5re_shneee.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-11" class="card" onclick="toggleCard(11)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a928/a_9e9Ud018svc19riuyxd0zngp_f3lf1a.png" alt="Post image">
+        <p class="excerpt">✨저렴한 가격! 알찬 일정!✨<br>🌊 보홀에서 만나는 완벽한 휴식과 모험! 🌴<br>호핑투어부터 고래상어 투어까지<br>모든 것이 포함된 프리미엄 패키지! 🐋✨<br>지금 ...</p>
+        <div class="card-content">
+          <p>✨저렴한 가격! 알찬 일정!✨<br>🌊 보홀에서 만나는 완벽한 휴식과 모험! 🌴<br>호핑투어부터 고래상어 투어까지<br>모든 것이 포함된 프리미엄 패키지! 🐋✨<br>지금 특별가 449,000원부터 시작합니다!<br>💎 $80 상당의 화려한 호핑투어<br>💎 $150 상당의 고래상어와 함께하는<br>    스릴 넘치는 투어<br>💎 2인 이상 예약 즉시 확정!<br>✈ 항공 일정<br>PUS-TAG 7C2151 21:00 - 00:30<br>TAG-PUS 7C2152 01:30-07:00<br>🎁 보홀에서만 누릴 수 있는 혜택<br>✔발마사지 30분 제공<br>✔푼톳/ 버진아일랜드 호핑투어<br>✔고래상어와의 특별한 만남<br>✔알로나비치에서의 화려한 나이트투어<br>✔무제한 삼겹살 &amp; 부들파이트 특식 2회 제공<br>✔방마다 열대과일 망고 1kg 무료 제공!<br>보홀의 맑고 푸른 바다, 따뜻한 자연 속에서 <br>잊을 수 없는 힐링을 경험해보세요. 🌺<br>👉 특전 및 세부 포함사항은 일정표 참고바랍니다.<br>📌 E트레블 QR코드[72시간 전]<br>📌 만15세 미만 - 부모동반시 영문가족관계증명서<br>부모미동반시 대사관 공증 https://etravel.gov.ph/<br>📌 패키지 일정 미참여시 $100/박/인 패널티 발생합니다.<br>--------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070) 7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a9ca/0_7e7Ud018svccmeliiahe0qs_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a9e6/0_9e7Ud018svckopsuoabg0dr_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-12" class="card" onclick="toggleCard(12)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a8j8/3_jbeUd018svc5vcuo4t4wss0_shneee.png" alt="Post image">
+        <p class="excerpt">2025년 새해, 크루즈에서 즐기는 특별한 여행<br>✨송가인 스페셜 크루즈✨<br>&#39;가인이어라~!&#39;<br>트로트 여신 송가인을 직접 만나볼 수 있는 기회!<br>선...</p>
+        <div class="card-content">
+          <p>2025년 새해, 크루즈에서 즐기는 특별한 여행<br>✨송가인 스페셜 크루즈✨<br>&#39;가인이어라~!&#39;<br>트로트 여신 송가인을 직접 만나볼 수 있는 기회!<br>선상에서 즐기는 &lt;송가인 콘서트&gt; , &lt;팬사인회&gt;<br>볼거리, 즐길거리 가득한 스페셜 크루즈 상품<br>지금 바로 만나보세요😍<br>📆출발일<br>1월6일(월) ~ 1월 12일 (일) - 6박7일<br>1월7일(월) ~ 1월 13일 (일) - 6박7일<br>🚢🛳MSC 벨리시마 🛳🚢<br>- 규모: 171,598톤의 초대형 크루즈<br>- 수용 인원: 승객 약 4,500명 / 약 1,536명의 승무원 탑승<br>📍 나하<br>- 독특한 문화와 역사, 아름다운 자연 경관을 지닌 일본의 인기 관광지<br>📍 이시가키<br>- 맑고 푸른 바다, 하얀 모래 해변, 열대 식물로 가득 찬 풍경이 아름다운 도시<br>📍 미야코지마<br>- 아름다운 해변과 투명한 바다로 유명한 오키나와 미야코 군도의 가장 큰 섬   <br>📍 기륭<br>- 아름다운 해안선과 풍부한 해산물로 유명한 대만의 항구 도시<br>크루즈가 드리는 즐거움😊<br>✅약 2시간 30분의 짧은 비행시간<br>✅자고 일어나면 새로운 여행지 도착<br>✅지루할 틈이 없는 다양한 프로그램<br>✅다양한 편의 시설 및 오락 (수영장, 스파, 체육관, 대형 공연장 등)<br>✅자유관광 및 선택관광이 가능<br>✅MSC 크루즈의 &#39;제트&#39; 시스템 - 어플을 통해 다양한 선박 시설을 편리하게 이용<br>2025년 새해 시작을 스페셜 크루즈에서, 평생 잊지 못할 특별한 시간을 보내세요!<br>사랑하는 사람들과 함께하는 소중한 순간을 더욱 빛나게 해줄 것입니다💗<br>------------------------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* O P : 박선아 실장 wtourbusan10@nate.com<br>* 이경훈 소장 wtourbusan9@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a8g4/4_1beUd018svcnhu4oqxgkwgl_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a8ji/4_3beUd018svc19ejv23bqo5bh_shneee.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-13" class="card" onclick="toggleCard(13)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a9ae/h_f99Ud018svc1bms6lglthxpf_f3lf1a.png" alt="Post image">
+        <p class="excerpt">🌺🌴 에어부산 X 발리 직항 🌴🌺<br>꿈의 휴양지 발리로 떠나는 특별한 여정!<br>부산에서 발리까지 에어부산이 첫 비행을 시작합니다.<br>아름다운 리조트에서 잊지 못할...</p>
+        <div class="card-content">
+          <p>🌺🌴 에어부산 X 발리 직항 🌴🌺<br>꿈의 휴양지 발리로 떠나는 특별한 여정!<br>부산에서 발리까지 에어부산이 첫 비행을 시작합니다.<br>아름다운 리조트에서 잊지 못할 휴가를 만끽해보세요!<br>발리의 대표적 리조트 <br>아야나/물리아 리조트에서 <br>여유로운 휴식과 다양한 부대시설을 누려보세요~!<br>🏖 리조트 소개<br>아야나 리조트 <br>발리의 절경을 자랑하는 절벽 위에 위치한 아야나 리조트!<br>전용 해변과 세계적으로 유명한 락 바에서 인도양의 아름다움을 감상하고,<br>럭셔리 스파에서의 완벽한 힐링을 경험해보세요!<br>물리아 리조트 <br>누사두아 지역에 위치한 물리아 리조트는<br>최상의 시설과 세심한 서비스로 유명합니다.<br>프라이빗 풀과 넓고 여유로운 객실에서 진정한 휴식을 느껴보세요!<br>📌 포함 사항<br>-  발리명소투어 [가루다공원, 울루와뚜 사원, 싱글핀발리]<br>- 우붓 탐방: 우붓 전통시장, 사라스와띠 사원, 몽키포레스트<br>- 발리 전통 마사지 1시간 (팁 별도)<br>📌 아융강 래프팅&amp;중식+너티누리스 폭립+마사지 2시간<br>한국에서 포함시 성인 17만원 / 아동 13만원<br>- 출발 7일전 사전신청자에 한함.<br>📌 준비사항<br>* 입 국<br>- 발리 관광세[현지납부불가]<br>https://lovebali.baliprov.go.id/<br>- 세관 신고서 작성 (입국 3일전부터 작성)<br>https://ecd.beacukai.go.id/<br>여행 기간 동안 평온함과 모험을 함께 즐길 수 있는 발리로의 여정,<br>지금 바로 예약하세요!<br>-------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070)7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37afa5/7_34cUd018svcqzjedbb4msx7_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37af6b/7_54cUd018svc196o00f7rp3tx_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a99i/i_099Ud018svcbsuyaw8ra102_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a90h/h_j99Ud018svc1fheann917690_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37879c/2_ceiUd018svc15qihciml8vqr_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/373c86/e_h3jUd018svc1q162yzmhdqu2_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-14" class="card" onclick="toggleCard(14)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a831/7_54bUd018svc1hz6er5oxak4w_f3lf1a.png" alt="Post image">
+        <p class="excerpt">🔊 신들의 섬, 발리로 떠나는 여행!<br>✈ 에어부산과 함께 발리로 떠나는 꿈같은 휴가<br>이제 부산에서  출발 가능합니다!<br>🌟 솔리아 레기안[4성급] - 919,00...</p>
+        <div class="card-content">
+          <p>🔊 신들의 섬, 발리로 떠나는 여행!<br>✈ 에어부산과 함께 발리로 떠나는 꿈같은 휴가<br>이제 부산에서  출발 가능합니다!<br>🌟 솔리아 레기안[4성급] - 919,000원/인~<br>🚀 10/30 ~ 3/31 기간 운항<br>금요일, 일요일 출발: 3박 5일 일정<br>월요일, 수요일 출발: 4박 6일 일정<br>📌 포함 혜택<br>발리 대표 명소 투어<br>[가루다공원, 울루와뚜 사원, 빠당빠당 비치]<br>우붓 투어 <br>[우붓왕궁, 전통시장, 사라스와띠 사원, <br>뜨갈랄랑 테라스, 뜨그눙안 폭포]<br>발리 전통 마사지 1시간 제공 (팁 별도)<br>짐바란에서 즐기는 신선한 씨푸드 특식<br>📌 특별 옵션<br>아융강 래프팅 &amp; 중식 + 너티누리스 폭립 + 2시간 마사지<br>사전 예약 시: 성인 17만원 / 아동 13만원<br>출발 7일 전까지 신청 가능<br>📌 필수 준비사항<br>* 입 국<br>-발리 도착비자[사전 온라인 지불/현지 납부가능] :<br>https://evisa.imigrasi.go.id/<br>- 발리 관광세[사전 온라인 지불/현지납부가능]<br>https://lovebali.baliprov.go.id/<br>- 세관 신고서 작성 (입국 3일전부터 작성)<br>https://ecd.beacukai.go.id/<br>발리에서 모험과 휴식, 모두 경험할 수 있는 완벽한 여행!<br>지금 바로 예약하고 꿈같은 발리로 떠나보세요! 🌴☀<br>-------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070)7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37afe3/e_d43Ud018svc14fdhkr2d2ynt_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a80f/c_44gUd018svc11d3bb0w2lc4o_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a8i7/b_j4bUd018svcz4x0ayobtz9w_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/373c86/e_h3jUd018svc1q162yzmhdqu2_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-15" class="card" onclick="toggleCard(15)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a47b/5_j88Ud018svc1po0ghn12wija_3m6c9o.png" alt="Post image">
+        <p class="excerpt">낭만적인 동양의 나폴리 나트랑~!!<br>영원한 봄의 도시 달랏~!!<br>✅ 24년 10월 ~ 25년 3월 31일까지<br>✅ 에어부산 3박5일 패턴 패키지<br>✅ 10/30 ...</p>
+        <div class="card-content">
+          <p>낭만적인 동양의 나폴리 나트랑~!!<br>영원한 봄의 도시 달랏~!!<br>✅ 24년 10월 ~ 25년 3월 31일까지<br>✅ 에어부산 3박5일 패턴 패키지<br>✅ 10/30 선발 조건!!<br>🎁 (알뜰) 실속팩 499,000원 ~<br>🎁 (품격) 노노팩 789,000원 ~<br>✨ 품격팩 스페셜 혜텍 ✨<br>📌 5성 - 투이블루/리갈리아 골드, 스위스벨 동급<br>📌 머드온천, 마차투어, 죽림사 케이블카<br>📌 다딴란 폭포 레일바이크<br>📌 나트랑, 달랏 야시장 (씨클로, 맥주, 피자, 음료)<br>📌 베트남 전신마사지 2시간<br>✈ 부산 나트랑 BX751 19:55 - 23:05<br>✈ 나트랑 부산 BX752 00:05 - 07:00<br>❤여권유효기간 6개월 이상 확인해주세요.<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 070-7575-0482<br>* O P : 구혜옥 wtourbusan7@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a42d/7_788Ud018svc1jx1ssnhac7o8_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a412/7_888Ud018svc1o4n3jndcezpe_3m6c9o.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a45h/7_988Ud018svco85sa0t5jq22_3m6c9o.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-16" class="card" onclick="toggleCard(16)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a46c/0_b3hUd018svc16eif7ey9vu08_f3lf1a.png" alt="Post image">
+        <p class="excerpt">✨보홀, 나만의 숨겨진 낙원✨<br>에메랄드빛 바다와 하얀 모래 해변,<br>보홀에서 잊지 못할 추억을 만들어보세요!<br>휴양과 모험을 동시에 즐길 수 있는 보홀에서<br>여유와...</p>
+        <div class="card-content">
+          <p>✨보홀, 나만의 숨겨진 낙원✨<br>에메랄드빛 바다와 하얀 모래 해변,<br>보홀에서 잊지 못할 추억을 만들어보세요!<br>휴양과 모험을 동시에 즐길 수 있는 보홀에서<br>여유와 즐거움을 만끽하세요!<br>💓 보홀 399,000원부터~<br>$80 상당의 호핑투어 포함!<br>5만원 추가 시 에어텔로 변경 가능!<br>🌈 2명 이상 예약 시 출발 확정! 🎶<br>✈ 스케줄 안내<br>PUS-TAG 7C2151 21:00 - 00:30<br>TAG-PUS 7C2152 01:30 - 07:00<br>🎁 보홀에서 즐길 수 있는 특별 혜택<br>✔ 청정한 바다에서 즐기는 체험 다이빙 강습<br>✔ 긴장을 풀어주는 전신 마사지 60분<br>✔ 환상적인 푸른 섬 호핑투어<br>✔ 아름다운 석양이 펼쳐진 알로나비치 나이트투어<br>💕 자연과 어우러진 완벽한 휴식,<br>    보홀에서 시작해보세요!<br>👉 특전 및 세부 포함사항은 일정표 참고바랍니다.<br>📌 E트레블 QR코드[72시간 전]<br>📌 만15세 미만 - 부모동반시 영문가족관계증명서<br>   부모미동반시 대사관 공증 https://etravel.gov.ph/<br>📌 패키지 일정 미참여시 $100/박/인 패널티 발생합니다.<br>--------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br>   믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070) 7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a4gj/0_c3hUd018svc1v1c6gralwv0n_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a4ae/0_f3hUd018svclhx5vuu042i3_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a4jd/0_d3hUd018svclam0apvrnmkh_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-17" class="card" onclick="toggleCard(17)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a018/1_b78Ud018svc19cdmghtpe72_shneee.png" alt="Post image">
+        <p class="excerpt">❤다낭/호이안 10-12월 앵.콜.특.가❤<br>&lt;베트남의 베스트셀러, 다낭!&gt;<br>저렴한 가격으로 떠날 수 있는 마지막 기회!<br>놓치지 말고 문의 주세요~~!<b...</p>
+        <div class="card-content">
+          <p>❤다낭/호이안 10-12월 앵.콜.특.가❤<br>&lt;베트남의 베스트셀러, 다낭!&gt;<br>저렴한 가격으로 떠날 수 있는 마지막 기회!<br>놓치지 말고 문의 주세요~~!<br>🎁알뜰 실속 369,000~<br>🎁노팁노옵션 629,000~<br>✔[~10/31 예약 조건] / 4명부터 출발!<br>더욱더 풍성해진 혜택 (품격)💕<br>- 전 객실 과일바구니 제공<br>- 베트남 전통마사지 120분 + 풋테라피 60분 추가 제공<br>&lt;특별한 혜택 - 품격&gt;<br>📌5성급 호텔 - 멜리아 빈펄 리버 프론트, 셀 드 메르<br>📌바나산 국립공원 관광<br>📌대리석으로 이루어진 마블마운틴(오행산)<br>📌유네스코 세계문화유산인 호이안 시내관광<br>📌베트남 전통마사지 120분 + 풋테라피 60분<br>📌호이안 바구니배<br>📌한강크루즈<br>📌전통의상 아오자이 체험관 (기념사진+음료제공)<br>📌미케비치해변 (열대과일 및 음료제공)<br>📌전객실 과일바구니 제공<br>🛫부산 다낭 VJ989 10:00 - 12:30<br>🛬다낭 부산 VJ988 02:55 - 09:00<br>** 10/27~ 항공 스케줄 변경 **<br>🛫 부산 다낭 VJ989 08:30 - 11:00<br>🛬 다낭 부산 VJ988 00:35 - 06:30<br>❤여권유효기간 6개월 이상 확인해주세요.<br>---------------------------------------------------<br>5억배상책임보험가입업체 💪 W투어<br>---------------------------------------------------<br>☎ 문의 및 담당<br>* 대표번호 : 051) 467-3200<br>* 직통번호 : 051) 468-0406<br>* O P : 박소연 wtourbusan6@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a0jd/1_c78Ud018svc1mdkxjsk7g9n8_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a014/1_e78Ud018svc1cx7gxrnq7zsb_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a070/1_f78Ud018svcxv750g2evs0o_shneee.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-18" class="card" onclick="toggleCard(18)">
+        <img src="https://coresos-phinf.pstatic.net/a/37a04c/6_c24Ud018svcx14s88tb1047_f3lf1a.png" alt="Post image">
+        <p class="excerpt">아름다운 바다에서 스릴 넘치는 액티비티를 <br>펼칠 수 있는 필리핀 세부로 떠나보세요! 🌊<br>따스한 햇살과 여유로운 휴식이 기다리는 곳, <br>세부로의 여행이 단돈 20만...</p>
+        <div class="card-content">
+          <p>아름다운 바다에서 스릴 넘치는 액티비티를 <br>펼칠 수 있는 필리핀 세부로 떠나보세요! 🌊<br>따스한 햇살과 여유로운 휴식이 기다리는 곳, <br>세부로의 여행이 단돈 20만원대부터 <br>시작한다고?! 😮 👥👥👥... "우리도 가자!"<br>모두가 꿈꾸는 그곳, 세부!<br>매력적인 가격과 다채로운 액티비티로 <br>가득한 여행지에서 <br>당신의 추억을 만들어보세요! 🎶✨<br>에메랄드빛 바다가 펼쳐진 멋진 풍경 속에서, <br>최적화된 리조트에서 편안한 휴식을 즐기며 <br>잊지 못할 시간을 보낼 수 있습니다. 🏖🏨<br>📢 세미 패키지: 299,000원부터~<br>🌞 2명 이상 출발 확정!<br>✈️ 스케줄: 3박 5일 일정<br>부산 - 세부 7C 2451 21:35 - 01:00<br>세부 - 부산 7C 2452 02:00 - 07:00<br>✔️체크 포인트<br>📍 $80 상당의 호핑투어 포함 시 5만원<br>📍 세부 현지에서 인기 있는 특별 식사 2회 제공<br>📍 전신 마사지 1시간 포함 [팁 별도, 아동 제외]<br>세부의 신비로운 바다 속에서 스노클링도 즐기고, <br>맑은 하늘 아래에서 여유로운 시간을 가져보세요. 🌞🐠<br>👉 특전 및 세부 포함사항은 일정표 참고바랍니다.<br>📌 E트레블 QR코드[72시간 전] https://etravel.gov.ph/<br>📌 만15세 미만 - 부모동반시 영문가족관계증명서<br>  부모미동반시 대사관 공증<br>📌 패키지 일정 미참여시 $100/박/인 패널티 발생합니다.<br>--------------------------------------<br>🔊 5억 배상책임보험 가입 업체<br> 믿고 맡길 수 있는 듬직한 💪 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200 / 직통 : 070) 7575-0033<br>* O P : 이원경 wtourbusan13@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/37a03f/6_924Ud018svc1e8cth5ts0y7_f3lf1a.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/37a0e9/6_a24Ud018svcfv9fixnruwyq_f3lf1a.png" alt="Post image">
+        </div>
+      </div>
+    
+      <div id="card-19" class="card" onclick="toggleCard(19)">
+        <img src="https://coresos-phinf.pstatic.net/a/379h73/4_eebUd018svc1i5o2etgsmm5s_shneee.png" alt="Post image">
+        <p class="excerpt">⭐동남아 골프 최강자 필리핀을 W와 함께😎⭐<br>W 투어만의 &lt;필리핀 골프 상품&gt; 지금 만나보세요💕<br>✔빼놓을  수 없는 필리핀 낭만 골프 체크 포인트<br>1...</p>
+        <div class="card-content">
+          <p>⭐동남아 골프 최강자 필리핀을 W와 함께😎⭐<br>W 투어만의 &lt;필리핀 골프 상품&gt; 지금 만나보세요💕<br>✔빼놓을  수 없는 필리핀 낭만 골프 체크 포인트<br>1️⃣세계적인 수준의 골프 코스<br>-세계적으로 유명한 골프 코스 디자이너들이 설계한<br>최상위 수준의 골프 코스 다수 보유<br>3박5일 / 4박6일간 다양한 코스의 골프 투어를 경험 해보세요!<br>2️⃣합리적인 가격과 접근성<br>-상대적으로 타 동남아 국가들에 비해 접근 매우 용이 (약 3시간 30분)<br>-합리적인 가격으로 수준 높은 서비스의 골프를 즐겨보세요<br>3️⃣친절한 캐디와 수준 높은 서비스<br>- 세심하고 친절한 캐디와 함께 편안하게 즐길 수 있는 환경<br>- 영어만 할 수 있다면 만사 OK!<br>- 모두가 만족할 만한 수준 높은 서비스를 제공해드립니다<br>-------------------------------------<br>5억 배상책임보험 가입 업체<br>믿고 맡길 수 있는 듬직한 W투어<br>--------------------------------------<br>☎ 문의 및 담당<br>* 대표 : 051) 467-3200<br>* O P : 이경훈 wtourbusan9@nate.com<br>            박소연 wtourbusan6@nate.com</p>
+          <img src="https://coresos-phinf.pstatic.net/a/379he9/e_1ebUd018svc5tsfracveaz5_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379h2g/e_3ebUd018svc64r9e0oo8wo9_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379h2g/e_4ebUd018svc1wp84r2d0idxd_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379hf1/g_eebUd018svc1iofqsbaozv3k_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379hdh/g_jebUd018svc1rkv8rwy2lq8o_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379heh/0_1ecUd018svc1pv1jm0fcq7ax_shneee.png" alt="Post image"><img src="https://coresos-phinf.pstatic.net/a/379hf5/h_0ebUd018svchkqial9iw37a_shneee.png" alt="Post image">
+        </div>
+      </div>
+    </div><script>
+    var currentOpenCard = null;
 
+    function toggleCard(index) {
+      var clickedCard = document.getElementById('card-' + index);
+      
+      if (currentOpenCard && currentOpenCard !== clickedCard) {
+        currentOpenCard.classList.remove('expanded');
+        currentOpenCard.style.animation = 'none';
+        currentOpenCard.style.transform = 'scale(1)';
+      }
+      
+      clickedCard.classList.toggle('expanded');
+      
+      if (clickedCard.classList.contains('expanded')) {
+        currentOpenCard = clickedCard;
+        setTimeout(() => {
+          const cardPosition = clickedCard.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: cardPosition - 10, behavior: 'smooth' });
+        }, 300);
+      } else {
+        clickedCard.style.animation = 'none';
+        clickedCard.style.transform = 'scale(1)';
+        currentOpenCard = null;
+      }
+    }
+  </script></body></html>
